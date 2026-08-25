@@ -1,167 +1,68 @@
-# Electricity Bill Calculator & Analyzer
+# ⚡ Electricity Bill Simulator
 
-## 📌 Project Overview
+A menu-driven **C programming project** that simulates an electricity billing system. It allows users to manage consumer details, calculate electricity bills using slab-based rates, generate bills, and store records using file handling.
 
-**Electricity Bill Calculator & Analyzer** is a menu-driven C programming project designed to manage electricity billing for multiple consumers. The project allows users to add consumers, calculate electricity bills using slab-based tariff rates, analyze monthly consumption, and store/load data using text files.
+## 🚀 Features
 
-This project demonstrates the implementation of a real-life electricity billing system using structured and modular C programming.
-
----
+- 👤 Add new consumer
+- 🔢 Enter electricity units
+- 🧮 Calculate bill using slab rates
+- 🧾 Generate electricity bill
+- 🔍 Search consumer records
+- 📋 View all consumers
+- 📊 Analyze electricity consumption
+- 💾 Store data using file handling
+- 💡 Display electricity-saving tips
+- 🗑️ Delete consumer records
 
 ## 🛠️ Technologies Used
 
-* **Programming Language:** C
-* **Concepts Applied:**
+- **C Programming**
+- Structures
+- Arrays
+- Functions
+- Conditional Statements
+- Loops
+- String Handling
+- File Handling
 
-  * Structures
-  * Arrays
-  * Functions
-  * Conditional statements
-  * Loops
-  * File Handling (TXT files)
-  * String handling
+## 💰 Billing System
 
----
+The bill is calculated according to the electricity units consumed.
 
-## 📂 Project Features
+| Units | Rate |
+|---|---:|
+| 0–100 | ₹2/unit |
+| 101–200 | ₹3/unit |
+| 201–500 | ₹5/unit |
+| Above 500 | ₹7/unit |
 
-### 1️⃣ Add New Consumer
+Additional fixed charges can also be included in the final bill.
 
-* Add multiple consumers
-* Store consumer name, room number, and meter number
-* Prevent duplicate consumer entries
+## 📂 Project Structure
 
-### 2️⃣ Calculate Bill
+```text
+Electricity-Bill-Simulator/
+│
+├── electricity_bill.c
+├── electricity_data.txt
+└── README.md
+▶️ How to Run
+1. Clone the repository
+git clone https://github.com/your-username/electricity-bill-simulator.git
+2. Open the project folder
+cd electricity-bill-simulator
+3. Compile
+gcc electricity_bill.c -o electricity_bill
+4. Run
+./electricity_bill
+📚 Learning Outcomes
 
-* Calculate electricity bill based on unit consumption
-* Uses slab-based tariff rates
-* Adds fixed charge and meter rent
+This project provides practical experience with:
 
-### 3️⃣ Add New Bill
-
-* Assign monthly electricity units to a specific consumer
-* Automatically calculate and store bill amount
-
-### 4️⃣ Analyze Monthly Bill
-
-* Identify consumer with:
-
-  * Maximum electricity usage
-  * Minimum electricity usage
-* Display room number, units consumed, and bill amount
-
-### 5️⃣ Data Persistence
-
-* Save consumer and billing data into a `.txt` file
-* Load stored data when the program restarts
-
-### 6️⃣ Power Saving Tips
-
-* Displays basic electricity-saving suggestions
-
----
-
-## 📊 Electricity Tariff Structure
-
-| Units Consumed | Rate (Rs/unit) |
-| -------------- | -------------- |
-| 0 – 50         | 4.27           |
-| 51 – 150       | 5.23           |
-| 151 – 300      | 6.61           |
-| 301+           | 6.80           |
-
-**Additional Charges:**
-
-* Fixed Charge: Rs 50.00
-* Meter Rent: Rs 10.00
-
----
-
-## 📁 File Handling
-
-* **File Type:** `.txt`
-* Used to store:
-
-  * Consumer details
-  * Monthly unit consumption
-  * Bill amount
-* Ensures data persistence across program runs
-
----
-
-## ▶️ How to Run the Project
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/yuvraj-k-singh/Electricity_Bill_Calculator_Analyzer.git
-   ```
-2. Navigate to the project directory
-3. Compile the program:
-
-   ```bash
-   gcc Electricity\ Bill\ Calculator\ \&\ Analyzer.c -o bill
-   ```
-4. Run the program:
-
-   ```bash
-   ./bill
-   ```
-
----
-
-## 📌 Menu Options
-
-```
-1. Add New Consumer
-2. Calculate Bill
-3. Analyze Monthly Bill
-4. Add New Bill
-5. Power Saving Tips
-6. Exit
-```
-
----
-
-## 📚 Learning Outcomes
-
-* Improved understanding of C structures and arrays
-* Hands-on experience with file handling
-* Stronger logical and analytical thinking
-* Experience in building a real-life use case project
-
----
-
-## 🚀 Future Enhancements
-
-* Login system (Admin/User)
-* Monthly bill history
-* Graphical User Interface (GUI)
-* Export bills to PDF
-* Database integration
-
----
-
-## 👨‍💻 Developer
-
-**Yuvraj Kumar Singh**
-
----
-
-## 🤝 Contributing
-Contributions, issues, and feature requests are welcome!
-
-Process:
-1. Fork the repository
-2. Create a new branch
-3. Commit your changes
-4. Submit a pull request
-
----
-
-## 📜 License
-This project is open-source and available under the **MIT License**.
-
----
-
-### ⭐ If you find this project helpful, please give it a star!
+C structures and functions
+File handling
+Menu-driven programming
+Electricity bill calculations
+Searching and managing records
+Building a real-world console application
